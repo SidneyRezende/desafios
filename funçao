@@ -1,0 +1,15 @@
+#  Crie uma Função: recomendar_plano para receber o consumo médio mensal: def recomendar_plano(consumo_medio): 
+# Crie uma Estrutura Condicional para verifica o consumo médio mensal]
+
+ def recomendar_plano(consumo):
+    consumo = float(consumo)  # Converte a entrada para float
+    if consumo <= 30:
+        return "Plano Essencial Fibra - 50Mbps"
+    elif consumo <= 20:
+        return "Plano Prata Fibra - 100Mbps"
+    else:
+        return "Plano Premium Fibra - 300Mbps"
+
+consumo_mensal = input("")  # A entrada não precisa ser convertida para string
+
+print(recomendar_plano(consumo_mensal))
